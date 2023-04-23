@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+
+</head>
+
+<body>
+    <div class="thanhtren">
+        <div class="bentrai">
+             <a href="" class="icon">
+                <div class="fa fa-home"></div> Hệ Thống Cửa Hàng
+            </a>
+        </div>     
+        <div class="benphai">
+             <a href="" class="icon">
+                <div class="fa fa-phone"></div> 0374023927
+            </a>
+
+        </div>
+
+    </div>
+    <div class="thanhcongcu">
+        <div class="logo">
+            <a href="" class="logo1"><img src="logo.webp" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul>
+
+                <li>
+                    <div class="item">
+                        <a href="" class="ten"><b>SẢN PHẨM</b>
+                            <div class="fa fa-chevron-down"></div>
+                        </a>
+                        <div class="layer1">
+                            <ul>
+                                <li>
+                                    <a href="">Đầm <div class="fa fa-chevron-right"></div></a>
+                                    <a href="">Áo sơ mi <div class="fa fa-chevron-right"> </div></a>
+                                    <a href="">Áo phông <div class="fa fa-chevron-right"></div></a>
+                                    <a href="">Áo dài <div class="fa fa-chevron-right"></div></a>
+                                    <a href="">Áo Khoác <div class="fa fa-chev ron-right"></div></a>
+                                    <a href="">Quần <div class="fa fa-chev ron-right"></div></a>
+                                    <a href="">Chân váy <div class="fa fa-chev ron-right"></div></a>
+                                    <a href="">Set bộ <div class="fa fa-chev ron-right"></div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="" class="ten"><b>SẢN PHẨM MỚI</b> </a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="" class="ten"><b>BỘ SƯU TẦM</b>
+                            <div class="fa fa-chevron-down"></div>
+                        </a>
+                        <div class="layer1">
+                            <ul>
+                                <li>
+                                    <a href="">Màu Hè</a>
+                                    <a href="">Summer</a>
+                                    <a href="">Chói Chang</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="" class="ten"><b>SUPPER SALE</b>
+                            <div class="fa fa-chevron-down"></div>
+                        </a>
+                        <div class="layer1">
+                            <ul>
+                                <li>
+                                    <a href="">Áo</a>
+                                    <a href="">Quần</a>
+                                    <a href="">Phụ Kiện</a>
+                                    <a href="">Đầm</a>
+                                    <a href="">Áo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <a href="" class="ten"><b>NEM ONLINE</b>
+                            <div class="fa fa-chevron-down"></div>
+                        </a>
+                        <div class="layer1">
+                            <ul>
+                                <li>
+                                    <a href="">Áo</a>
+                                    <a href="">Quần</a>
+                                    <a href="">Phụ Kiện</a>
+                                    <a href="">Đầm</a>
+                                    <a href="">Áo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="icontimkiem">
+            <a href="">
+                <div class="fa fa-search"></div>
+            </a>
+            <div class="search_box">
+                <input class="search-box_input" type="text" placeholder="What are you looking for?">
+                <button class="search-box_btn">
+                    <div class="fa fa-search"></div>
+                </button>
+            </div>
+
+        </div>
+
+
+
+        <div class="taikhoan">
+            <a href="">
+                <div class="fa fa-user-circle-o"> </div>
+            </a>
+            <a href="">
+                <div class="khachhang"> Khách Hàng</div>
+            </a>
+
+
+            <div class="boxlgin">
+                <div class="dangnhap">
+                    <a href=""> Đăng Nhập</a>
+                </div>
+                <div class="dangki">
+                    <a href=""> Đăng kí</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="giohang">
+            <a href="">
+                <div class="fa fa-shopping-bag"> </div>
+            </a>
+            <a href="">
+                <div class="shopping"> Giỏ Hàng </div>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="slider">
+            <img class="trungngu" src="../ccc/ms_banner_img3.webp" alt="imgss">
+            <div class="btn">
+                <button onclick="back()"><i class='bx bx-chevron-left'></i><button>
+                        <button onclick="next()"> <i class='bx bx-chevron-right'></i></button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var mainimg = document.querySelector(".trungngu")
+
+        var images = ["../ccc/hinhnen1.jpg", "../ccc/hinhnen2.jpg", "../ccc/hinhnen3.jpg", "../ccc/ms_banner_img3.webp"]
+        var num = 0;
+        function next() {
+            num++;
+            if (num >= images.length) {
+                num = 0;
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        };
+        function back() {
+            num--;
+            if (num < 0) {
+                num = images.length - 1;
+                mainimg.src = images[num]
+            } else {
+                mainimg.src = images[num]
+            }
+        }
+    </script>
+    <div class="bosuutap">
+        <div class="bstleft">
+            <a href="" class="">
+                <img src="home_new_banner_1.webp" alt="">
+                <div class="phiaduoi">
+                    <div class="layer1">NEW COLECTION</div>
+                    <div class="layer2">SHOP NOW</div>
+                </div>
+            </a>
+        </div>
+        <div class="bstright">
+            <a href="" class=""><img src="home_new_banner_2.webp" alt="">
+                <div class="phiaduoi">
+                    <div class="layer1">NEW COLECTION</div>
+                    <div class="layer2">SHOP NOW</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="sanpham">SẢN PHẨM MỚI</div>
+
+
+    <div class="kod">
+        <div style="background-image: url(18_6b8399c75fce42a787837ed787e5a268_1024x1024.webp);" class="ptc">
+            <div class="bin"><a href="">Đầm Công Sở <br>
+                    <p>120.000VND</p>
+                </a>
+            </div>
+
+        </div>
+        <div style="background-image: url(22_7a671d5202554f6b96be90d6e1e5b9d9_1024x1024.webp); " class="ptc1">
+            <div class="bin1"><a href="">Set Áo Luxury <br>
+                    <p>900.000VND</p>
+                </a>
+            </div>
+        </div>
+        <div style="background-image: url(22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp);" class="ptc2">
+            <div class="bin2"><a href="">Đầm Hoa Summer<br>
+                    <p>120.000VND</p>
+                </a>
+            </div>
+        </div>
+        <div style="background-image: url(23_311149444b0a49fc8abe4eca8140cab5_1024x1024.webp);" class="ptc3">
+            <div class="bin3"><a href="">Đầm Hồng <br>
+                    <p>120.000VND</p>
+                </a>
+            </div>
+        </div>
+        <div style="background-image: url(24_51afa903ae5e41c584d456c9ab53316a_1024x1024.webp);" class="ptc4">
+            <div class="bin4"><a href="">D19572<br>
+                    <p>120.000VND</p>
+                </a>
+            </div>
+        </div>
+
+        <div style="background-image: url(23_311149444b0a49fc8abe4eca8140cab5_1024x1024.webp);" class="ptc5">
+            <div class="bin5"><a href="">Đầm Công Sở <br>
+                    <p>120.000VND</p>
+                </a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <style>
+        .kod {
+            margin-top: 5px;
+            display: flex;
+            height: 30rem;
+            gap: 1rem;
+        }
+
+        .kod>div {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.40, .4, .45, 1.4);
+        }
+
+        .kod>div:hover {
+            flex: 2;
+        }
+    </style>
+    <div class="sanpham">SẢN PHẨM BÁN CHẠY</div>
+    <!-- <div class="conten"> 
+
+        <div class="bo">
+            <img src="4_46acf0a9820a4de699f6f9c854d66890_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="24_51afa903ae5e41c584d456c9ab53316a_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="23_311149444b0a49fc8abe4eca8140cab5_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="22_7a671d5202554f6b96be90d6e1e5b9d9_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="22_7779da7751654ff5844e409c83238c31_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="4_46acf0a9820a4de699f6f9c854d66890_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+        <div class="bo">
+            <img src="23_311149444b0a49fc8abe4eca8140cab5_1024x1024.webp" alt="" class="anh1">
+<div class="mangche">
+<a href="" class="hi"><div class="nutmua">Đặt Hàng</div></a>
+</div>
+            <div class="layer3">
+                <div class="bentrai">
+                    <a href="">Áo Len Mùa Đông</a>
+                </div>
+                <div class="benphia">150.000VND</div>
+
+            </div>
+           
+
+        </div>
+
+        </div>
+     
+       
+
+    </div>  
+<div class="docquyen">
+    <img src="199.webp" alt="">
+</div>
+<div class="blog">
+    <div class="chutren">FASHION BLOG
+        <div class="gach"></div>
+    </div>
+    <div class="chuduoi">
+        ĐÓN ĐẦU PHONG CÁCH , ĐỊNH HƯỚNG THỜI TRANG
+    </div>
+</div> -->
+<div class="conten">
+    <!-- <div class="thanhtren">
+        <img src="c2e902e031e1d9d932411dd0b8ab5eef.jpg" alt=""class="anhnen">
+  
+    </div> -->
+    <div class="bo">
+        <div class="card">
+            <div class="imgbx">
+                <img src="24_51afa903ae5e41c584d456c9ab53316a_1024x1024.webp" alt="">
+            </div>
+            <div class="details">
+                <h3>Nike Lebron x10</h3>
+                <h4>Product Details</h4>
+                <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+           <h4>size</h4>
+           <ul class="size">
+            <label>
+                <input type="radio" name="size" value="s">
+                <span>S</span>
+              </label>
+              
+              <label>
+                <input type="radio" name="size" value="m">
+                <span>M</span>
+              </label>
+              
+              <label>
+                <input type="radio" name="size" value="l">
+                <span>L</span>
+              </label>
+              
+              <label>
+                <input type="radio" name="size" value="xl">
+                <span>XL</span>
+              </label>
+        </ul>
+            <div class="group">
+            <h2><sup>$</sup>119 <small>.99</small></h2>
+       
+        <a href="">Buy Now </a>
+    </div>
+            </div>
+          </div>
+
+</div> 
+
+
+<div class="bo">
+    <div class="card">
+        <div class="imgbx">
+            <img src="../Home/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp" alt="">
+        </div>
+        <div class="details">
+            <h3>Nike Lebron x10</h3>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+       <h4>size</h4>
+       <ul class="size">
+        <label>
+            <input type="radio" name="size" value="s">
+            <span>S</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="m">
+            <span>M</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="l">
+            <span>L</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="xl">
+            <span>XL</span>
+          </label>
+    </ul>
+        <div class="group">
+        <h2><sup>$</sup>119 <small>.99</small></h2>
+   
+    <a href="">Buy Now </a>
+</div>
+        </div>
+      </div>    
+</div>  
+<div class="bo">
+    <div class="card">
+        <div class="imgbx">
+            <img src="23_311149444b0a49fc8abe4eca8140cab5_1024x1024.webp" alt="">
+        </div>
+        <div class="details">
+            <h3>Nike Lebron x10</h3>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+       <h4>size</h4>
+       <ul class="size">
+        <label>
+            <input type="radio" name="size" value="s">
+            <span>S</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="m">
+            <span>M</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="l">
+            <span>L</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="xl">
+            <span>XL</span>
+          </label>
+    </ul>
+        <div class="group">
+        <h2><sup>$</sup>119 <small>.99</small></h2>
+   
+    <a href="">Buy Now </a>
+</div>
+        </div>
+      </div>    
+</div>  
+<div class="bo">
+    <div class="card">
+        <div class="imgbx">
+            <img src="../Home/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp" alt="">
+        </div>
+        <div class="details">
+            <h3>Nike Lebron x10</h3>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+       <h4>size</h4>
+       <ul class="size">
+        <label>
+            <input type="radio" name="size" value="s">
+            <span>S</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="m">
+            <span>M</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="l">
+            <span>L</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="xl">
+            <span>XL</span>
+          </label>
+    </ul>
+        <div class="group">
+        <h2><sup>$</sup>119 <small>.99</small></h2>
+   
+    <a href="">Buy Now </a>
+</div>
+        </div>
+      </div>    
+</div>  
+<div class="bo">
+    <div class="card">
+        <div class="imgbx">
+            <img src="../Home/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp" alt="">
+        </div>
+        <div class="details">
+            <h3>Nike Lebron x10</h3>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+       <h4>size</h4>
+       <ul class="size">
+        <label>
+            <input type="radio" name="size" value="s">
+            <span>S</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="m">
+            <span>M</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="l">
+            <span>L</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="xl">
+            <span>XL</span>
+          </label>
+    </ul>
+        <div class="group">
+        <h2><sup>$</sup>119 <small>.99</small></h2>
+   
+    <a href="">Buy Now </a>
+</div>
+        </div>
+      </div>    
+</div>  
+<div class="bo">
+    <div class="card">
+        <div class="imgbx">
+            <img src="../Home/22_9298781326064ff0b5bbe1bd69f99dee_1024x1024.webp" alt="">
+        </div>
+        <div class="details">
+            <h3>Nike Lebron x10</h3>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor ,sit amet consectetur adiposicing elit .Nulla ducimstore</p>
+       <h4>size</h4>
+       <ul class="size">
+        <label>
+            <input type="radio" name="size" value="s">
+            <span>S</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="m">
+            <span>M</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="l">
+            <span>L</span>
+          </label>
+          
+          <label>
+            <input type="radio" name="size" value="xl">
+            <span>XL</span>
+          </label>
+    </ul>
+        <div class="group">
+        <h2><sup>$</sup>119 <small>.99</small></h2>
+   
+    <a href="">Buy Now </a>
+</div>
+        </div>
+      </div>    
+</div>  
+
+</div>
+
+</body>
+
+</html>
